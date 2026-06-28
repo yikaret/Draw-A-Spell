@@ -1,0 +1,417 @@
+deck,card_id,count
+Avatar of Air,1,3
+Avatar of Air,2,2
+Avatar of Air,3,1
+Avatar of Air,4,2
+Avatar of Air,5,1
+Avatar of Air,6,2
+Avatar of Air,7,1
+Avatar of Air,8,2
+Avatar of Air,9,2
+Avatar of Air,10,2
+Avatar of Air,11,2
+Avatar of Air,12,2
+Avatar of Air,13,1
+Avatar of Air,14,1
+Avatar of Air,15,1
+Avatar of Air,16,1
+Avatar of Air,17,1
+Avatar of Air,18,1
+Avatar of Air,19,1
+Avatar of Air,20,1
+Avatar of Air,21,1
+Avatar of Air,22,1
+Avatar of Air,23,1
+Avatar of Air,24,1
+Avatar of Air,25,3
+Avatar of Air,26,3
+Avatar of Air,27,3
+Avatar of Air,28,2
+Avatar of Air,29,2
+Avatar of Air,30,1
+Avatar of Air,31,1
+Avatar of Air,32,1
+Avatar of Earth,33,1
+Avatar of Earth,34,1
+Avatar of Earth,35,1
+Avatar of Earth,36,2
+Avatar of Earth,37,2
+Avatar of Earth,38,1
+Avatar of Earth,39,3
+Avatar of Earth,40,1
+Avatar of Earth,41,2
+Avatar of Earth,42,2
+Avatar of Earth,43,2
+Avatar of Earth,44,3
+Avatar of Earth,45,2
+Avatar of Earth,46,1
+Avatar of Earth,47,1
+Avatar of Earth,48,1
+Avatar of Earth,49,2
+Avatar of Earth,50,2
+Avatar of Earth,51,1
+Avatar of Earth,52,1
+Avatar of Earth,53,1
+Avatar of Earth,54,1
+Avatar of Earth,55,1
+Avatar of Earth,56,1
+Avatar of Earth,57,1
+Avatar of Earth,58,1
+Avatar of Earth,59,1
+Avatar of Earth,60,2
+Avatar of Earth,61,3
+Avatar of Earth,62,2
+Avatar of Fire,63,1
+Avatar of Fire,64,1
+Avatar of Fire,65,1
+Avatar of Fire,66,1
+Avatar of Fire,67,1
+Avatar of Fire,68,2
+Avatar of Fire,69,2
+Avatar of Fire,70,1
+Avatar of Fire,71,1
+Avatar of Fire,72,1
+Avatar of Fire,73,1
+Avatar of Fire,74,2
+Avatar of Fire,75,2
+Avatar of Fire,76,2
+Avatar of Fire,77,2
+Avatar of Fire,78,2
+Avatar of Fire,79,1
+Avatar of Fire,80,1
+Avatar of Fire,81,1
+Avatar of Fire,82,2
+Avatar of Fire,83,2
+Avatar of Fire,84,1
+Avatar of Fire,85,2
+Avatar of Fire,86,1
+Avatar of Fire,87,1
+Avatar of Fire,88,1
+Avatar of Fire,89,1
+Avatar of Fire,90,1
+Avatar of Fire,91,1
+Avatar of Fire,92,1
+Avatar of Fire,93,1
+Avatar of Fire,94,1
+Avatar of Fire,95,1
+Avatar of Fire,96,1
+Avatar of Water,97,1
+Avatar of Water,98,1
+Avatar of Water,99,1
+Avatar of Water,100,2
+Avatar of Water,101,2
+Avatar of Water,102,1
+Avatar of Water,103,1
+Avatar of Water,104,1
+Avatar of Water,105,2
+Avatar of Water,106,2
+Avatar of Water,107,2
+Avatar of Water,108,1
+Avatar of Water,109,1
+Avatar of Water,110,2
+Avatar of Water,111,2
+Avatar of Water,112,1
+Avatar of Water,113,1
+Avatar of Water,114,2
+Avatar of Water,115,2
+Avatar of Water,116,1
+Avatar of Water,117,2
+Avatar of Water,118,1
+Avatar of Water,119,1
+Avatar of Water,120,1
+Avatar of Water,121,1
+Avatar of Water,122,1
+Avatar of Water,123,3
+Avatar of Water,124,3
+Avatar of Water,125,3
+Avatar of Water,126,2
+Avatar of Water,127,2
+Avatar of Water,128,1
+Avatar of Water,129,1
+Avatar of Water,130,1
+Flamecaller,76,2
+Flamecaller,75,2
+Flamecaller,131,1
+Flamecaller,82,2
+Flamecaller,74,2
+Flamecaller,83,2
+Flamecaller,64,1
+Flamecaller,77,3
+Flamecaller,73,1
+Flamecaller,78,1
+Flamecaller,79,1
+Flamecaller,81,1
+Flamecaller,85,2
+Flamecaller,132,1
+Flamecaller,133,1
+Flamecaller,87,1
+Flamecaller,66,2
+Flamecaller,134,1
+Flamecaller,72,1
+Flamecaller,67,1
+Flamecaller,69,2
+Flamecaller,68,1
+Flamecaller,65,1
+Flamecaller,135,1
+Flamecaller,70,1
+Flamecaller,91,4
+Flamecaller,95,1
+Flamecaller,89,4
+Flamecaller,90,4
+Flamecaller,92,2
+Flamecaller,96,1
+Sparkmage,3,1
+Sparkmage,136,1
+Sparkmage,25,3
+Sparkmage,1,3
+Sparkmage,27,3
+Sparkmage,26,3
+Sparkmage,28,2
+Sparkmage,9,2
+Sparkmage,11,2
+Sparkmage,12,2
+Sparkmage,29,2
+Sparkmage,17,2
+Sparkmage,10,2
+Sparkmage,137,2
+Sparkmage,8,2
+Sparkmage,2,2
+Sparkmage,6,2
+Sparkmage,4,2
+Sparkmage,138,1
+Sparkmage,14,1
+Sparkmage,19,1
+Sparkmage,20,1
+Sparkmage,16,1
+Sparkmage,139,1
+Sparkmage,140,1
+Sparkmage,30,1
+Sparkmage,21,1
+Sparkmage,15,1
+Sparkmage,141,1
+Sparkmage,13,1
+Sparkmage,5,1
+Sparkmage,31,1
+Waveshaper,126,3
+Waveshaper,124,3
+Waveshaper,123,3
+Waveshaper,125,3
+Waveshaper,100,2
+Waveshaper,105,2
+Waveshaper,111,2
+Waveshaper,118,2
+Waveshaper,107,2
+Waveshaper,112,2
+Waveshaper,117,2
+Waveshaper,127,2
+Waveshaper,115,2
+Waveshaper,101,2
+Waveshaper,106,2
+Waveshaper,102,2
+Waveshaper,121,1
+Waveshaper,142,1
+Waveshaper,104,1
+Waveshaper,122,1
+Waveshaper,143,1
+Waveshaper,144,1
+Waveshaper,108,1
+Waveshaper,145,1
+Waveshaper,146,1
+Waveshaper,129,1
+Waveshaper,128,1
+Waveshaper,99,1
+Waveshaper,147,1
+Waveshaper,120,1
+Waveshaper,97,1
+Waveshaper,110,1
+Geomancer,59,3
+Geomancer,57,3
+Geomancer,58,3
+Geomancer,44,3
+Geomancer,39,3
+Geomancer,41,2
+Geomancer,61,2
+Geomancer,38,2
+Geomancer,62,2
+Geomancer,49,2
+Geomancer,36,2
+Geomancer,37,2
+Geomancer,50,2
+Geomancer,43,2
+Geomancer,42,2
+Geomancer,48,1
+Geomancer,148,1
+Geomancer,149,1
+Geomancer,54,1
+Geomancer,150,1
+Geomancer,45,1
+Geomancer,151,1
+Geomancer,46,1
+Geomancer,33,1
+Geomancer,60,1
+Geomancer,52,1
+Geomancer,152,1
+Geomancer,153,1
+Geomancer,53,1
+Geomancer,154,1
+Geomancer,155,1
+Geomancer,156,1
+Savior,157,1
+Savior,158,1
+Savior,159,1
+Savior,160,2
+Savior,161,1
+Savior,162,1
+Savior,163,1
+Savior,164,2
+Savior,165,2
+Savior,166,2
+Savior,167,1
+Savior,168,1
+Savior,169,1
+Savior,170,1
+Savior,171,3
+Savior,172,1
+Savior,173,2
+Savior,174,2
+Savior,175,1
+Savior,176,1
+Savior,177,1
+Savior,178,1
+Savior,179,1
+Savior,180,1
+Savior,181,1
+Savior,182,2
+Savior,183,1
+Savior,184,1
+Savior,185,2
+Savior,186,2
+Savior,187,1
+Savior,188,1
+Savior,189,1
+Savior,190,1
+Savior,191,1
+Savior,192,2
+Savior,193,2
+Savior,194,2
+Persecutor,195,1
+Persecutor,196,1
+Persecutor,197,1
+Persecutor,198,1
+Persecutor,199,1
+Persecutor,200,1
+Persecutor,201,2
+Persecutor,202,1
+Persecutor,203,2
+Persecutor,204,1
+Persecutor,205,2
+Persecutor,206,1
+Persecutor,207,1
+Persecutor,208,1
+Persecutor,209,1
+Persecutor,210,1
+Persecutor,211,1
+Persecutor,212,1
+Persecutor,213,1
+Persecutor,214,2
+Persecutor,215,1
+Persecutor,216,1
+Persecutor,217,2
+Persecutor,218,1
+Persecutor,219,2
+Persecutor,220,1
+Persecutor,221,2
+Persecutor,222,1
+Persecutor,223,1
+Persecutor,224,1
+Persecutor,185,1
+Persecutor,186,1
+Persecutor,188,1
+Persecutor,225,2
+Persecutor,226,1
+Persecutor,227,1
+Persecutor,228,1
+Persecutor,229,1
+Persecutor,194,2
+Persecutor,230,2
+Persecutor,231,2
+Harbinger,232,1
+Harbinger,233,1
+Harbinger,234,2
+Harbinger,235,2
+Harbinger,236,1
+Harbinger,237,2
+Harbinger,238,2
+Harbinger,239,2
+Harbinger,240,2
+Harbinger,241,1
+Harbinger,242,1
+Harbinger,243,1
+Harbinger,244,1
+Harbinger,245,1
+Harbinger,246,1
+Harbinger,247,2
+Harbinger,248,1
+Harbinger,249,2
+Harbinger,250,1
+Harbinger,251,2
+Harbinger,252,2
+Harbinger,253,1
+Harbinger,254,1
+Harbinger,255,1
+Harbinger,256,1
+Harbinger,257,1
+Harbinger,258,1
+Harbinger,184,1
+Harbinger,259,2
+Harbinger,260,1
+Harbinger,261,1
+Harbinger,262,1
+Harbinger,263,1
+Harbinger,264,1
+Harbinger,265,2
+Harbinger,266,2
+Harbinger,192,2
+Harbinger,267,1
+Harbinger,268,1
+Harbinger,247,2
+Necromancer,269,1
+Necromancer,270,1
+Necromancer,271,1
+Necromancer,272,1
+Necromancer,273,2
+Necromancer,274,1
+Necromancer,275,2
+Necromancer,276,2
+Necromancer,277,1
+Necromancer,278,1
+Necromancer,279,1
+Necromancer,280,3
+Necromancer,281,2
+Necromancer,282,1
+Necromancer,283,2
+Necromancer,284,1
+Necromancer,285,1
+Necromancer,286,1
+Necromancer,287,1
+Necromancer,288,1
+Necromancer,289,1
+Necromancer,290,3
+Necromancer,291,1
+Necromancer,292,1
+Necromancer,293,2
+Necromancer,294,1
+Necromancer,295,1
+Necromancer,296,1
+Necromancer,258,1
+Necromancer,297,1
+Necromancer,262,1
+Necromancer,225,1
+Necromancer,298,1
+Necromancer,299,1
+Necromancer,300,2
+Necromancer,301,1
+Necromancer,265,2
+Necromancer,267,1
+Necromancer,230,1
+Necromancer,231,2

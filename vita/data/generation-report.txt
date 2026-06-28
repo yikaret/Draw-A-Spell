@@ -1,0 +1,6 @@
+Generated at: 2026-02-15T23:16:57.001Z
+Decks parsed: 12
+Cards generated: 301
+Deck rows: 416
+Card art sources: 301
+Unmatched names (fallback generated): 0

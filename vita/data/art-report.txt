@@ -1,0 +1,6 @@
+Generated at: 2026-02-15T23:17:25.196Z
+Manifest rows: 301
+Card art generated: 301
+Missing source files: 0
+Failed conversions: 0
+pngquant used: yes

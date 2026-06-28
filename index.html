@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="./" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorcery: Solo Sandbox</title>
+    <link rel="icon" href="./assets/icon.png" />
+    <style>
+      :root {
+        color-scheme: dark;
+        --ink: #e8f1ff;
+        --muted: #9fb0c2;
+        --panel: #0f141c;
+        --panel-hi: #141c27;
+        --border: #233143;
+        --accent: #7fa4d9;
+        --grid-line: rgba(118, 138, 166, 0.55);
+        --grid-glow: rgba(110, 170, 255, 0.18);
+      }
+      * { box-sizing: border-box; }
+      html, body, #root { height: 100%; min-height: 100%; }
+      body {
+        margin: 0;
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
+        background: radial-gradient(1200px 900px at 12% 10%, #1c2a3f 0%, #0b1118 50%, #070b12 100%);
+        color: var(--ink);
+        overflow-x: hidden;
+      }
+      .app {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 8px;
+        padding: 6px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      .panel {
+        background: linear-gradient(180deg, rgba(20, 30, 44, 0.95), rgba(11, 16, 22, 0.98));
+        border: 1px solid rgba(47, 62, 84, 0.85);
+        border-radius: 8px;
+        padding: 8px;
+        box-shadow: 0 14px 32px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      }
+      .title {
+        font-size: 13px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 6px;
+      }
+      .stack { display: flex; flex-direction: column; gap: 10px; }
+      .rowwrap { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+      .btn {
+        appearance: none;
+        border: 1px solid var(--border);
+        background: linear-gradient(180deg, #1b2838, #111a24);
+        color: var(--ink);
+        padding: 6px 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 12px;
+        transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+      }
+      .btn:hover {
+        border-color: rgba(126, 178, 255, 0.8);
+        box-shadow: 0 6px 16px rgba(15, 24, 36, 0.6);
+        transform: translateY(-1px);
+      }
+      .btn:active {
+        transform: translateY(0);
+      }
+      .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+      .badge {
+        padding: 4px 8px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        color: var(--ink);
+        font-size: 11px;
+        background: rgba(12, 20, 30, 0.7);
+      }
+      .board-viewport {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        border: 1px solid rgba(42, 59, 82, 0.9);
+        border-radius: 14px;
+        background:
+          radial-gradient(400px 320px at 18% 14%, rgba(110, 170, 255, 0.22), transparent 70%),
+          linear-gradient(160deg, rgba(10, 16, 24, 0.95), rgba(18, 26, 40, 0.95));
+        box-shadow: 0 22px 50px rgba(0, 0, 0, 0.55), inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+        aspect-ratio: 5 / 4;
+        height: auto;
+        min-height: 220px;
+      }
+      .board-viewport::before {
+        content: "";
+        position: absolute;
+        inset: 8px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.04);
+        pointer-events: none;
+      }
+      .board-pan-layer {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        will-change: transform;
+      }
+      .board-zoom-layer {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: top left;
+        will-change: transform;
+      }
+      .grid {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        background: linear-gradient(180deg, rgba(12, 18, 26, 0.9), rgba(8, 12, 18, 0.95));
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04), inset 0 0 24px rgba(5, 8, 12, 0.8);
+        grid-template-rows: repeat(4, 1fr);
+      }
+      .board-canvas {
+        width: 100%;
+        height: 100%;
+        display: block;
+        touch-action: none;
+      }
+      .row { display: grid; gap: 0; grid-template-columns: repeat(5, 1fr); }
+      .cell {
+        border: 1px solid var(--grid-line);
+        border-right: 0;
+        border-bottom: 0;
+        position: relative;
+        background: linear-gradient(160deg, rgba(18, 28, 40, 0.55), rgba(10, 15, 22, 0.6));
+        transition: box-shadow 0.12s ease, border-color 0.12s ease, background 0.12s ease;
+      }
+      .cell:hover {
+        border-color: rgba(130, 182, 255, 0.7);
+        box-shadow: inset 0 0 0 1px var(--grid-glow);
+        background: linear-gradient(160deg, rgba(28, 42, 60, 0.65), rgba(12, 18, 26, 0.7));
+      }
+      .row:last-child .cell { border-bottom: 1px solid var(--grid-line); }
+      .row .cell:last-child { border-right: 1px solid var(--grid-line); }
+      .hand { display: flex; gap: 8px; flex-wrap: wrap; }
+      .card { width: 72px; height: 96px; border: 1px solid var(--border); border-radius: 8px; display: grid; place-items: center; box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35); background: rgba(12, 18, 26, 0.9); }
+      .footer { font-size: 12px; color: var(--muted); display: flex; justify-content: space-between; align-items: center; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

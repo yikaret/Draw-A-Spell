@@ -1,0 +1,185 @@
+.shell {
+  --turnbar-pad-block: 8px;
+  --turnbar-pad-inline: 8px;
+  --status-pad-block: 6px;
+  --status-pad-inline: 8px;
+  --drawers-gap: 6px;
+  --drawers-pad-block: 6px;
+  --drawers-pad-inline: 8px;
+  --drawer-panel-pad: 8px;
+  --drawer-panel-max-h: min(30dvh, 260px);
+  --tab-gap: 8px;
+  --tab-cols-visible: 3;
+  --tab-col-width: calc((100% - (var(--tab-gap) * (var(--tab-cols-visible) - 1))) / var(--tab-cols-visible));
+  min-height: 100dvh;
+  height: 100dvh;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto auto auto;
+  grid-template-areas:
+    "turnbar"
+    "board"
+    "status"
+    "drawers"
+    "inspector";
+  background:
+    radial-gradient(130% 90% at 50% -8%, rgba(255, 239, 214, 0.14), transparent 58%),
+    radial-gradient(110% 72% at 50% 118%, rgba(114, 82, 54, 0.2), transparent 60%),
+    linear-gradient(180deg, #6c513b, #523c2c 58%, #463326);
+  color: #f6ebd8;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+  overflow: hidden;
+}
+
+.turnBar {
+  grid-area: turnbar;
+  padding: var(--turnbar-pad-block) var(--turnbar-pad-inline);
+  border-bottom: 1px solid rgba(221, 181, 127, 0.18);
+  background: linear-gradient(180deg, rgba(82, 58, 39, 0.96), rgba(54, 38, 27, 0.96));
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+  z-index: 2;
+}
+
+.board {
+  grid-area: board;
+  min-height: 0;
+  overflow: auto;
+  padding: 6px 6px 2px;
+  scrollbar-gutter: stable both-edges;
+  background: rgba(28, 19, 14, 0.12);
+}
+
+.statusBar {
+  grid-area: status;
+  padding: var(--status-pad-block) var(--status-pad-inline) calc(var(--status-pad-block) - 2px);
+  border-top: 1px solid rgba(221, 181, 127, 0.14);
+  background: linear-gradient(180deg, rgba(76, 54, 37, 0.8), rgba(54, 38, 27, 0.8));
+}
+
+.drawers {
+  grid-area: drawers;
+  display: grid;
+  gap: var(--drawers-gap);
+  padding: var(--drawers-pad-block) var(--drawers-pad-inline);
+  background: linear-gradient(180deg, rgba(62, 45, 32, 0.96), rgba(43, 31, 23, 0.96));
+  border-top: 1px solid rgba(221, 181, 127, 0.18);
+  box-shadow: 0 -10px 16px rgba(0, 0, 0, 0.16);
+}
+
+.drawerTabRail {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: var(--tab-col-width);
+  gap: var(--tab-gap);
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 2px;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+}
+
+.drawerTabRail::-webkit-scrollbar {
+  height: 6px;
+}
+
+.drawerTabRail::-webkit-scrollbar-thumb {
+  background: rgba(211, 177, 134, 0.46);
+  border-radius: 999px;
+}
+
+.drawerTabButton {
+  scroll-snap-align: start;
+  min-width: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 11px;
+  padding: 6px 8px;
+  border-color: rgba(121, 89, 62, 0.8);
+  background: linear-gradient(180deg, rgba(235, 222, 199, 0.94), rgba(192, 166, 136, 0.96));
+  color: #2f2218;
+}
+
+.drawerTabButtonActive {
+  border-color: rgba(236, 206, 162, 0.72);
+  background: linear-gradient(180deg, rgba(107, 74, 48, 0.96), rgba(74, 50, 33, 0.98));
+  color: #fff0db;
+  box-shadow: 0 0 0 1px rgba(221, 181, 127, 0.18), 0 6px 14px rgba(0, 0, 0, 0.24);
+}
+
+.drawerPanel {
+  border: 1px solid rgba(221, 181, 127, 0.16);
+  border-radius: 14px;
+  background: rgba(33, 23, 16, 0.44);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  padding: var(--drawer-panel-pad);
+  max-height: var(--drawer-panel-max-h);
+  overflow: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  backdrop-filter: blur(3px);
+}
+
+.inspector {
+  grid-area: inspector;
+  min-height: 0;
+  border-top: 1px solid rgba(221, 181, 127, 0.18);
+}
+
+@media (max-height: 860px) {
+  .shell {
+    --turnbar-pad-block: 6px;
+    --status-pad-block: 5px;
+    --drawers-gap: 5px;
+    --drawers-pad-block: 5px;
+    --drawer-panel-pad: 7px;
+    --drawer-panel-max-h: min(25dvh, 210px);
+    --tab-gap: 6px;
+  }
+
+  .board {
+    padding: 5px 5px 1px;
+  }
+}
+
+@media (max-height: 760px) {
+  .shell {
+    --turnbar-pad-block: 5px;
+    --turnbar-pad-inline: 6px;
+    --status-pad-block: 4px;
+    --status-pad-inline: 6px;
+    --drawers-gap: 4px;
+    --drawers-pad-block: 4px;
+    --drawers-pad-inline: 6px;
+    --drawer-panel-pad: 6px;
+    --drawer-panel-max-h: min(22dvh, 165px);
+    --tab-gap: 5px;
+  }
+
+  .drawerTabButton {
+    font-size: 10px;
+    padding: 5px 7px;
+  }
+
+  .drawerTabRail::-webkit-scrollbar {
+    height: 4px;
+  }
+}
+
+@media (max-height: 680px) {
+  .shell {
+    --drawer-panel-max-h: min(19dvh, 136px);
+  }
+}
+
+@media (min-width: 900px) {
+  .shell {
+    max-width: 560px;
+    margin: 0 auto;
+    border-left: 1px solid rgba(221, 181, 127, 0.18);
+    border-right: 1px solid rgba(221, 181, 127, 0.18);
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "sorcery-solo-vite",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "generate:vita:data": "node ./scripts/generate-vita-data.mjs",
+    "generate:vita:art": "node ./scripts/generate-vita-art.mjs",
+    "build:vita:vpk": "bash ./scripts/build-vita-vpk.sh",
+    "release:vita:vpk": "bash ./scripts/release-vita-vpk.sh",
+    "build:web": "VITE_BUILD_TARGET=web VITE_WEB_BASE=/sorcery/ tsc -b && VITE_BUILD_TARGET=web VITE_WEB_BASE=/sorcery/ vite build",
+    "build:cap": "VITE_BUILD_TARGET=cap tsc -b && VITE_BUILD_TARGET=cap vite build",
+    "preview": "vite preview",
+    "cap:sync": "npx cap sync",
+    "cap:sync:ios": "npx cap sync ios",
+    "cap:sync:android": "npx cap sync android",
+    "cap:open:ios": "npx cap open ios",
+    "cap:open:android": "npx cap open android",
+    "build:cf": "VITE_BUILD_TARGET=web VITE_WEB_BASE=/ tsc -b && VITE_BUILD_TARGET=web VITE_WEB_BASE=/ vite build --mode production",
+    "cf:assets:prepare": "node ./scripts/prepare-cf-assets.mjs",
+    "cf:assets:deploy": "npm run cf:assets:prepare && npx wrangler pages deploy .cf-pages-assets --project-name drawaspell-assets --branch main --commit-dirty=true",
+    "cf:pages:deploy": "npm run build:cf && node ./scripts/prune-cf-app-assets.mjs && npx wrangler pages deploy dist --project-name drawaspell --branch main --commit-dirty=true",
+    "cf:deploy:all": "npm run cf:assets:deploy && npm run cf:pages:deploy",
+    "cf:ws:deploy": "npx wrangler deploy --config worker/ws/wrangler.toml",
+    "cf:ws:tail": "npx wrangler tail drawaspell-ws --config worker/ws/wrangler.toml"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.4.0",
+    "@capacitor/core": "^8.4.0",
+    "@capacitor/ios": "^8.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.4.0",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^6.0.2",
+    "typescript": "^5.5.4",
+    "vite": "^8.0.16",
+    "wrangler": "^4.100.0"
+  }
+}

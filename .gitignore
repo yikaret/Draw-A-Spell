@@ -1,0 +1,12 @@
+.DS_Store
+.venv/
+.wrangler/
+.cf-pages-assets/
+node_modules/
+dist/
+output/
+*.dmg
+*.zip
+tsconfig.tsbuildinfo
+public/assets/
+vita/data/art/

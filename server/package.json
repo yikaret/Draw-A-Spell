@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Sorcery 2-player WebSocket room relay",
+  "type": "commonjs",
+  "main": "ws.js",
+  "scripts": {
+    "start": "node ws.js",
+    "dev": "node ws.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.18.3"
+  }
+}

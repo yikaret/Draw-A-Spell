@@ -1,0 +1,20 @@
+name = "drawaspell-ws"
+main = "src/index.ts"
+compatibility_date = "2026-02-09"
+workers_dev = true
+
+[[durable_objects.bindings]]
+name = "LOBBY"
+class_name = "LobbyDO"
+
+[[durable_objects.bindings]]
+name = "IDENTITY"
+class_name = "IdentityDO"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["LobbyDO"]
+
+[[migrations]]
+tag = "v2"
+new_sqlite_classes = ["IdentityDO"]

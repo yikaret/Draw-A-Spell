@@ -1,0 +1,302 @@
+id,name,kind,cost,atk,hp,flags
+1,Lightning Bolt,SPELL_DAMAGE,2,3,0,1
+2,Chain Lightning,SPELL_DAMAGE,2,2,0,1
+3,Thunderstorm,SPELL_DAMAGE,4,3,0,1
+4,Apprentice Wizard,UNIT,3,1,1,0
+5,Grandmaster Wizard,UNIT,6,1,1,0
+6,Blink,SPELL_DRAW,2,2,0,0
+7,Waypoint Portal,SPELL_DRAW,3,3,0,0
+8,Cloud Spirit,UNIT,2,2,2,0
+9,Spectral Stalker,UNIT,2,2,2,0
+10,Headless Haunt,UNIT,3,4,4,0
+11,Snow Leopard,UNIT,1,2,2,0
+12,Plumed Pegasus,UNIT,3,3,3,0
+13,Gyre Hippogriffs,UNIT,4,3,3,0
+14,Spire Lich,UNIT,3,1,1,0
+15,Kite Archer,UNIT,3,2,2,0
+16,Roaming Monster,UNIT,5,4,4,0
+17,Midnight Rogue,UNIT,3,2,2,0
+18,Peregrine Apparition,UNIT,3,1,1,0
+19,Sling Pixies,UNIT,1,1,1,0
+20,Skirmishers of Mu,UNIT,4,3,3,0
+21,Nimbus Jinn,UNIT,6,4,4,0
+22,Nightmare,UNIT,7,6,6,0
+23,Devil's Egg,SPELL_HEAL,3,1,0,2
+24,Doomsday Device,SPELL_DAMAGE,4,6,0,20
+25,Lone Tower,SPELL_RAMP,0,1,0,0
+26,Dark Tower,SPELL_RAMP,0,1,0,0
+27,Gothic Tower,SPELL_RAMP,0,1,0,0
+28,Updraft Ridge,SPELL_RAMP,0,1,0,0
+29,Mountain Pass,SPELL_RAMP,0,1,0,0
+30,Observatory,SPELL_RAMP,0,1,0,0
+31,Cloud City,SPELL_RAMP,0,1,0,0
+32,Bottomless Pit,SPELL_RAMP,0,1,0,0
+33,King of the Realm,UNIT,7,3,3,0
+34,Queen of Midland,UNIT,5,1,1,0
+35,Midland Army,UNIT,8,8,8,0
+36,Land Surveyor,UNIT,2,1,1,0
+37,House Arn Bannerman,UNIT,4,2,2,0
+38,Scent Hounds,UNIT,2,2,2,0
+39,Belmotte Longbowmen,UNIT,3,3,3,0
+40,Frontier Settlers,UNIT,2,1,1,0
+41,Wild Boars,UNIT,1,2,2,0
+42,Amazon Warriors,UNIT,5,5,5,0
+43,Autumn Unicorn,UNIT,3,4,4,0
+44,Cave Trolls,UNIT,3,3,3,0
+45,Pudge Butcher,UNIT,4,5,5,0
+46,Mountain Giant,UNIT,8,8,8,0
+47,Stone-gaze Gorgons,UNIT,5,3,3,0
+48,Wraetannis Titan,UNIT,7,6,6,0
+49,Overpower,SPELL_DRAW,1,2,0,0
+50,Bury,SPELL_DAMAGE,3,3,0,1
+51,Earthquake,SPELL_DAMAGE,5,5,0,1
+52,Entangle Terrain,SPELL_BUFF,4,3,1,2
+53,Craterize,SPELL_DAMAGE,8,8,0,28
+54,Siege Ballista,SPELL_DAMAGE,3,3,0,1
+55,Screaming Skull,SPELL_DAMAGE,3,3,0,1
+56,Spear of Destiny,SPELL_DAMAGE,5,5,0,1
+57,Rustic Village,SPELL_RAMP,0,1,0,0
+58,Humble Village,SPELL_RAMP,0,1,0,0
+59,Simple Village,SPELL_RAMP,0,1,0,0
+60,Holy Ground,SPELL_RAMP,0,2,0,0
+61,Vantage Hills,SPELL_RAMP,0,1,0,0
+62,Quagmire,SPELL_RAMP,0,1,0,0
+63,Ancient Dragon,UNIT,7,6,6,0
+64,Colicky Dragonettes,UNIT,3,3,3,0
+65,Incinerate,SPELL_DAMAGE,5,4,0,1
+66,Firebolts,SPELL_DAMAGE,2,1,0,1
+67,Heat Ray,SPELL_DAMAGE,3,2,0,1
+68,Fireball,SPELL_DAMAGE,4,4,0,1
+69,Minor Explosion,SPELL_DAMAGE,3,3,0,20
+70,Major Explosion,SPELL_DAMAGE,7,7,0,20
+71,Wildfire,SPELL_SUMMON,4,3,4,0
+72,Blaze,SPELL_DAMAGE,3,2,0,20
+73,Quarrelsome Kobolds,UNIT,3,2,2,0
+74,Sacred Scarabs,UNIT,2,1,1,0
+75,Raal Dromedary,UNIT,1,2,2,0
+76,Pit Vipers,UNIT,1,1,1,0
+77,Ogre Goons,UNIT,3,3,3,0
+78,Clamor of Harpies,UNIT,4,3,3,0
+79,Hillock Basilisk,UNIT,4,3,3,0
+80,Bull Demons of Adum,UNIT,5,5,5,0
+81,Petrosian Cavalry,UNIT,4,3,3,0
+82,Rimland Nomads,UNIT,2,2,2,0
+83,Wayfaring Pilgrim,UNIT,2,1,1,0
+84,Doomsday Prophet,UNIT,5,1,1,0
+85,Sand Worm,UNIT,4,4,4,0
+86,Wills-o'-the-Wisp,UNIT,1,1,1,0
+87,Infernal Legion,UNIT,6,6,6,0
+88,Drums of Doom,SPELL_DAMAGE,5,5,0,1
+89,Red Desert,SPELL_RAMP,0,1,0,0
+90,Remote Desert,SPELL_RAMP,0,1,0,0
+91,Arid Desert,SPELL_RAMP,0,1,0,0
+92,Shifting Sands,SPELL_RAMP,0,1,0,0
+93,Standing Stones,SPELL_RAMP,0,1,0,0
+94,River of Flame,SPELL_RAMP,0,1,0,0
+95,Cornerstone,SPELL_RAMP,0,1,0,0
+96,Vesuvius,SPELL_RAMP,0,2,0,0
+97,Diluvian Kraken,UNIT,8,8,8,0
+98,Unland Angler,UNIT,5,4,4,0
+99,Guile Sirens,UNIT,3,3,3,0
+100,Tide Naiads,UNIT,2,2,2,0
+101,Deep-Sea Mermaids,UNIT,3,1,1,0
+102,Anui Undine,UNIT,5,1,1,0
+103,Mother Nature,UNIT,6,3,3,0
+104,Swan Maidens,UNIT,2,2,2,0
+105,Swamp Buffalo,UNIT,1,2,2,0
+106,Coral-Reef Kelpie,UNIT,3,3,3,0
+107,Polar Bears,UNIT,2,2,2,0
+108,Sedge Crabs,UNIT,1,3,3,0
+109,Megamoeba,UNIT,3,1,1,0
+110,Brobdingnag Bullfrog,UNIT,3,3,3,0
+111,Sea Serpent,UNIT,4,4,4,0
+112,Pirate Ship,UNIT,4,5,5,0
+113,Marine Voyage,SPELL_DRAW,2,2,0,0
+114,Dodge Roll,SPELL_DRAW,0,1,0,0
+115,Drown,SPELL_DAMAGE,3,3,0,1
+116,Frost Nova,SPELL_DAMAGE,4,4,0,1
+117,Ice Lance,SPELL_DAMAGE,3,3,0,1
+118,Riptide,SPELL_DRAW,2,2,0,0
+119,Upwelling,SPELL_DRAW,4,3,0,0
+120,Flood,SPELL_DRAW,4,3,0,0
+121,Wrath of the Sea,SPELL_DRAW,7,3,0,0
+122,Sunken Treasure,SPELL_SUMMON,3,3,4,0
+123,Spring River,SPELL_RAMP,0,1,0,0
+124,Summer River,SPELL_RAMP,0,1,0,0
+125,Autumn River,SPELL_RAMP,0,1,0,0
+126,Undertow,SPELL_RAMP,0,1,0,0
+127,Floodplain,SPELL_RAMP,0,1,0,0
+128,Island Leviathan,SPELL_RAMP,0,1,0,0
+129,Maelström,SPELL_RAMP,0,1,0,0
+130,Tadpole Pool,SPELL_RAMP,0,1,0,0
+131,Lava Salamander,UNIT,2,1,1,0
+132,Askelon Phoenix,UNIT,5,4,4,0
+133,Escyllion Cyclops,UNIT,6,6,6,0
+134,Mad Dash,SPELL_DRAW,2,1,0,0
+135,Cone of Flame,SPELL_DAMAGE,6,6,0,20
+136,Lucky Charm,SPELL_DRAW,1,1,0,0
+137,Dead of Night Demon,UNIT,2,2,2,0
+138,Teleport,SPELL_DRAW,2,2,0,0
+139,Raise Dead,SPELL_SUMMON,4,4,5,0
+140,Planar Gate,SPELL_RAMP,0,1,0,0
+141,Highland Clansmen,UNIT,7,5,5,0
+142,Tufted Turtles,UNIT,3,2,2,0
+143,Stormy Seas,SPELL_DRAW,4,3,0,0
+144,Seirawan Hydra,UNIT,6,6,6,0
+145,Porcupine Pufferfish,UNIT,1,1,1,0
+146,Mariner's Curse,SPELL_DRAW,3,3,0,0
+147,Font of Life,SPELL_HEAL,3,3,0,2
+148,Slumbering Giantess,UNIT,3,5,5,0
+149,Sinkhole,SPELL_RAMP,0,1,0,0
+150,Rolling Boulder,SPELL_DAMAGE,4,4,0,1
+151,Payload Trebuchet,SPELL_RAMP,5,2,0,0
+152,Divine Healing,SPELL_BUFF,1,4,1,2
+153,Dalcean Phalanx,UNIT,4,5,5,0
+154,Cave-In,SPELL_DRAW,4,3,0,0
+155,Border Militia,SPELL_SUMMON,3,3,4,0
+156,Bedrock,SPELL_RAMP,0,1,0,0
+157,Flame of the First Ones,SPELL_HEAL,2,1,0,2
+158,Makeshift Barricade,SPELL_DAMAGE,3,3,0,1
+159,Eltham Townsfolk,UNIT,1,2,2,0
+160,Revered Revenant,UNIT,1,3,3,0
+161,Serava Townsfolk,UNIT,1,2,2,0
+162,Town Priest,UNIT,1,1,1,0
+163,Angel Ascendant,UNIT,2,2,2,0
+164,Muddy Pigs,UNIT,2,2,2,0
+165,Survivors of Serava,UNIT,2,2,2,0
+166,Virgin in Prayer,UNIT,2,1,1,0
+167,Mayor of Milborne,UNIT,3,2,2,0
+168,Nightwatchmen,UNIT,3,3,3,0
+169,Order of the White Wing,UNIT,3,3,3,0
+170,Rowdy Boys,UNIT,3,3,3,0
+171,Search Party,UNIT,3,3,3,0
+172,Guardian Angel,UNIT,4,3,3,0
+173,Monks of Kobalsa,UNIT,4,4,4,0
+174,Weathered Trunks,UNIT,4,4,4,0
+175,Faith Incarnate,UNIT,5,1,1,0
+176,Malakhim,UNIT,6,4,4,0
+177,Enduring Faith,SPELL_BUFF,2,2,1,2
+178,Wave of Eviction,SPELL_DRAW,2,2,0,0
+179,Baptize,SPELL_BUFF,3,3,1,2
+180,Divine Lance,SPELL_DAMAGE,3,1,0,9
+181,Holy Nova,SPELL_BUFF,4,4,1,2
+182,Smite,SPELL_DAMAGE,4,4,0,17
+183,Golden Dawn,SPELL_SUMMON,7,4,5,0
+184,Algae Bloom,SPELL_RAMP,0,1,0,0
+185,Autumn Bloom,SPELL_RAMP,0,1,0,0
+186,Blessed Village,SPELL_RAMP,0,1,0,0
+187,Blessed Well,SPELL_RAMP,0,1,0,0
+188,Consecrated Ground,SPELL_RAMP,0,1,0,0
+189,Fertile Earth,SPELL_RAMP,0,1,0,0
+190,Forlorn Keep,SPELL_RAMP,0,1,0,0
+191,Mudslide,SPELL_RAMP,0,1,0,0
+192,Stream,SPELL_RAMP,0,1,0,0
+193,Troubled Town,SPELL_RAMP,0,1,0,0
+194,Valley,SPELL_RAMP,0,1,0,0
+195,Holy Water,SPELL_BUFF,2,2,1,2
+196,Blade of Thorns,SPELL_HEAL,3,3,0,2
+197,Peacemaker Arbalest,SPELL_DAMAGE,3,1,0,1
+198,One-shot Wizard,UNIT,1,1,1,0
+199,Flagellant,UNIT,2,2,2,0
+200,Flaming Skull,UNIT,2,2,2,0
+201,Holy Warrior,UNIT,2,2,2,0
+202,Kissers of Wounds,UNIT,2,2,2,0
+203,Lesser Blood Demon,UNIT,2,3,3,0
+204,Redmane Hyena,UNIT,2,2,2,0
+205,Wild Fanatic,UNIT,2,2,2,0
+206,Intrepid Hero,UNIT,3,3,3,0
+207,Martyrs of Tomorrow,UNIT,3,2,2,0
+208,Màzuj Ifrit,UNIT,3,4,4,0
+209,Angry Mob,UNIT,4,3,3,0
+210,Fallen Angel,UNIT,4,3,3,0
+211,Flayer,UNIT,4,3,3,0
+212,Greater Blood Demon,UNIT,4,6,6,0
+213,Shackled Demon,UNIT,4,5,5,0
+214,Zeppelin of Zealots,UNIT,5,4,4,0
+215,Cherubim,UNIT,6,4,4,0
+216,Undesirables,UNIT,6,5,5,0
+217,Bind Evil,SPELL_DRAW,1,1,0,0
+218,Blaze of Glory,SPELL_DRAW,3,3,0,0
+219,Flame Strike,SPELL_DAMAGE,3,3,0,20
+220,Lash,SPELL_DAMAGE,3,1,0,1
+221,Trial by Fire,SPELL_DAMAGE,3,3,0,1
+222,Wreathed in Righteousness,SPELL_BUFF,5,4,1,2
+223,Release the Hounds,SPELL_SUMMON,7,4,5,0
+224,Active Volcano,SPELL_RAMP,0,1,0,0
+225,Desert Bloom,SPELL_RAMP,0,1,0,0
+226,Hillside Chapel,SPELL_RAMP,0,1,0,0
+227,Molten Maar,SPELL_RAMP,0,1,0,0
+228,Purgatory,SPELL_RAMP,0,1,0,0
+229,Road to Perdition,SPELL_RAMP,0,1,0,0
+230,Vast Desert,SPELL_RAMP,0,1,0,0
+231,Wasteland,SPELL_RAMP,0,1,0,0
+232,Falling Star,SPELL_SUMMON,4,3,4,0
+233,Aaj-kegon Ghost Crabs,UNIT,2,1,1,0
+234,Forsaken,UNIT,2,3,3,0
+235,Sea Witch,UNIT,2,2,2,0
+236,Static Servant,UNIT,2,2,2,0
+237,Willing Tribute,UNIT,2,2,2,0
+238,Mesmer Demon,UNIT,3,3,3,0
+239,Nommo Monitor,UNIT,3,3,3,0
+240,Bound Spirit,UNIT,4,4,4,0
+241,Frozen Horror,UNIT,5,3,3,0
+242,Lacuna Entity,UNIT,5,4,4,0
+243,Regurgitator,UNIT,5,4,4,0
+244,Slimy Mutants,UNIT,5,4,4,0
+245,Gnarled Wendigo,UNIT,6,5,5,0
+246,Hearkening Kraken,UNIT,6,5,5,0
+247,Shoggoth,UNIT,6,5,5,0
+248,Dormant Monstrosity,UNIT,7,6,6,0
+249,Ten-tonne Slug,UNIT,7,7,7,0
+250,Yog-Sothoth,UNIT,7,10,10,0
+251,Gift of the Frog,SPELL_SUMMON,2,2,3,0
+252,Ice Shards,SPELL_DAMAGE,3,1,0,1
+253,Monstermorphosis,SPELL_DRAW,3,3,0,0
+254,Swap,SPELL_DRAW,3,3,0,0
+255,Abyssal Assault,SPELL_DAMAGE,4,1,0,1
+256,Into the Abyss,SPELL_DRAW,4,3,0,0
+257,Call of the Sea,SPELL_DRAW,6,3,0,0
+258,Accursed Tower,SPELL_RAMP,0,1,0,0
+259,Croaking Swamp,SPELL_RAMP,0,1,0,0
+260,Dark Alley,SPELL_RAMP,0,1,0,0
+261,Deep Sea,SPELL_RAMP,0,1,0,0
+262,Den of Evil,SPELL_RAMP,0,1,0,0
+263,Elder Ruins,SPELL_RAMP,0,1,0,0
+264,Peculiar Port,SPELL_RAMP,0,1,0,0
+265,Spire,SPELL_RAMP,0,1,0,0
+266,Stinging Kelp,SPELL_RAMP,0,1,0,0
+267,Twilight Bloom,SPELL_RAMP,0,1,0,0
+268,Horrible Hybrids,UNIT,3,3,3,0
+269,Necromancer,UNIT,0,1,1,0
+270,Panpipes of Pnom,SPELL_DAMAGE,3,2,0,1
+271,Corpse Catapult,SPELL_DAMAGE,5,5,0,20
+272,Bone Jumble,UNIT,1,1,1,0
+273,Fowl Bones,UNIT,1,1,1,0
+274,Bitter Departed,UNIT,2,2,2,0
+275,Ignited,UNIT,2,3,3,0
+276,Novice Necromancer,UNIT,2,1,1,0
+277,Noxious Corpse,UNIT,2,2,2,0
+278,Khamaseen Mummy,UNIT,3,3,3,0
+279,Order of the Pale Worm,UNIT,3,3,3,0
+280,Screamer,UNIT,3,3,3,0
+281,Snallygaster,UNIT,3,3,3,0
+282,Stygian Archers,UNIT,3,3,3,0
+283,Hotwheel,UNIT,4,2,2,0
+284,Dreadwing,UNIT,5,4,4,0
+285,Master Necromancer,UNIT,5,2,2,0
+286,Vesper Swarm,UNIT,5,4,4,0
+287,Those Who Linger,UNIT,6,4,4,0
+288,Draconian Bonekite,UNIT,7,7,7,0
+289,Stitched Abomination,UNIT,7,1,1,0
+290,Bone Spear,SPELL_DAMAGE,1,3,0,1
+291,Detonate,SPELL_DAMAGE,1,3,0,20
+292,Carrionette,SPELL_SUMMON,3,3,4,0
+293,Kiss of Death,SPELL_DAMAGE,3,3,0,1
+294,Witching Hour,SPELL_BUFF,3,1,1,2
+295,Necronomiconcert,SPELL_DRAW,5,3,0,0
+296,Accursed Desert,SPELL_RAMP,0,1,0,0
+297,Darkest Dungeon,SPELL_RAMP,0,1,0,0
+298,Dread Thicket,SPELL_RAMP,0,1,0,0
+299,Forsaken Crypt,SPELL_RAMP,0,1,0,0
+300,Open Mausoleum,SPELL_RAMP,0,1,0,0
+301,Sold-out Cemetery,SPELL_RAMP,0,1,0,0

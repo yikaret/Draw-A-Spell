@@ -1,9 +1,3 @@
-Image assets are intentionally omitted from this repository snapshot.
+The repository includes `public/assets/`, but intentionally omits `public/assets/Images/`.
 
-To restore the missing art, provision the image assets manually via the Sorcery official API on `curiosa.io`.
-
-Expected image asset locations:
-- `public/assets/`
-- `vita/data/art/`
-
-Until those assets are provisioned, any UI or export flow that depends on card or board art will be incomplete.
+Those missing image assets must be added manually via the Sorcery official API on `curiosa.io`.

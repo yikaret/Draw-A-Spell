@@ -8,5 +8,4 @@ output/
 *.dmg
 *.zip
 tsconfig.tsbuildinfo
-public/assets/
-vita/data/art/
+public/assets/Images/
